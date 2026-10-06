@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #071b2c;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: #f5b942;
+}
+
+.logo p {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+nav {
+    margin-top: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5b942;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(3, 15, 28, 0.78),
+            rgba(3, 15, 28, 0.88)
+        ),
+        url("apostle-kevin.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+}
+
+.welcome,
+.small-title {
+    color: #f5b942;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.subtitle {
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn,
+button {
+    display: inline-block;
+    background: #f5b942;
+    color: #071b2c;
+    border: none;
+    padding: 13px 23px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn.second {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 70px 20px;
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2,
+.leader h2,
+.location-section h2 {
+    color: #071b2c;
+    font-size: 32px;
+    margin: 10px 0 25px;
+}
+
+.section > p:not(.small-title) {
+    max-width: 720px;
+    margin: 10px auto;
+}
+
+
+/* ================= APOSTLE ================= */
+
+.leader {
+    background: white;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.leader-card {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: #f5f7fa;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.leader-card img {
+    width: 300px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.leader-info {
+    flex: 1;
+}
+
+.leader-info h3 {
+    color: #071b2c;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+/* ================= VERSE ================= */
+
+.verse {
+    background: #071b2c;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.verse h2 {
+    max-width: 750px;
+    margin: 18px auto;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.verse p:last-child {
+    color: #f5b942;
+    font-weight: bold;
+}
+
+
+/* ================= SERVICES ================= */
+
+.events {
+    background: #eef2f5;
+    max-width: none;
+}
+
+.event-card {
+    background: white;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.event-card h3 {
+    color: #071b2c;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    margin: 6px 0;
+}
+
+
+/* ================= SERMON CARDS ================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #071b2c;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* ================= LIVESTREAM ================= */
+
+.livestream {
+    padding: 75px 20px;
+    text-align: center;
+    color: white;
+    background: #071b2c;
+}
+
+.livestream h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.live-box {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 40px 25px;
+    background: #102d44;
+    border-radius: 20px;
+}
+
+.live-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    max-width: 1000px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    min-height: 260px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #eef2f5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+}
+
+.gallery-placeholder {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.gallery-placeholder p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* ================= LOCATION ================= */
+
+.location-section {
+    padding: 75px 20px;
+    text-align: center;
+    background: #eef2f5;
+}
+
+.location-box {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 40px 25px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+}
+
+.map-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-box {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+}
+
+.contact-box h3 {
+    color: #071b2c;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.social {
+    padding: 13px 18px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+.tiktok {
+    background: #111;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #030f1c;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: #f5b942;
+    letter-spacing: 5px;
+}
+
+footer p {
+    margin-top: 8px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h2 {
+        font-size: 31px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 4px;
+        font-size: 12px;
+    }
+
+    .leader-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leader-card img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 18px;
+    }
+
+    .verse h2 {
+        font-size: 23px;
+    }
+}
