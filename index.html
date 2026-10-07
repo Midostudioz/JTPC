@@ -6,413 +6,423 @@
 
     <title>JTPC | Jesus Testimony Power Church</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.95);
+            border-bottom: 1px solid #c9a227;
+            padding: 15px 20px;
+        }
+
+        .nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)),
+                url("apostle-kevin.jpg") center/cover;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .cross {
+            font-size: 60px;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #d4af37;
+            letter-spacing: 3px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            color: #ddd;
+            margin: 15px 0 25px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #d4af37;
+        }
+
+        .gold {
+            background: #d4af37;
+            color: black;
+        }
+
+        .dark {
+            background: transparent;
+            color: white;
+        }
+
+        section {
+            padding: 65px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h2 {
+            color: #d4af37;
+            font-size: 32px;
+        }
+
+        .title p {
+            color: #aaa;
+        }
+
+        .pastor {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .pastor img {
+            width: 100%;
+            max-width: 430px;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+            border: 2px solid #d4af37;
+        }
+
+        .pastor h2 {
+            color: #d4af37;
+            margin-bottom: 12px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #121212;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: #d4af37;
+        }
+
+        .card h3 {
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+
+        .live {
+            text-align: center;
+            background: linear-gradient(135deg, #17120a, #080808);
+            border-top: 1px solid #6f5715;
+            border-bottom: 1px solid #6f5715;
+        }
+
+        .live-badge {
+            color: #ff3030;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #030303;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+
+        footer strong {
+            color: #d4af37;
+        }
+
+        @media(max-width: 700px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .pastor {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
+    <div class="nav">
+        <div class="logo">✝ JTPC <span>Church</span></div>
 
-    <div class="logo">
-        <h1>JTPC</h1>
-        <p>Jesus Testimony Power Church</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pastor">Pastor</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#sermons">Sermons</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
 </header>
 
-
 <!-- HERO -->
-<section id="home" class="hero">
-
+<section class="hero" id="home">
     <div class="hero-content">
 
-        <p class="welcome">WELCOME TO</p>
+        <div class="cross">✝</div>
 
-        <h2>
-            JESUS TESTIMONY<br>
-            POWER CHURCH
-        </h2>
+        <h1>JTPC</h1>
 
-        <p class="subtitle">
-            A place of prayer, faith, salvation and transformation.
+        <h2>Jesus Testimony Power Church</h2>
+
+        <p>
+            Welcome to JTPC — a place of faith, prayer,
+            worship, deliverance and the Word of God.
+        </p>
+
+        <p>
+            📍 Mau Summit
         </p>
 
         <div class="buttons">
 
-            <a href="#services" class="btn">
-                Our Services
+            <a class="btn gold"
+               href="https://wa.me/254712550886"
+               target="_blank">
+                🙏 Prayer Line
             </a>
 
-            <a
-                href="https://wa.me/254712550886"
-                target="_blank"
-                class="btn second">
-
-                Prayer Line
-
+            <a class="btn dark"
+               href="#services">
+                📅 Services
             </a>
 
         </div>
-
     </div>
-
 </section>
 
 
-<!-- APOSTLE -->
-<section class="leader">
+<!-- PASTOR -->
+<section id="pastor">
 
-    <p class="small-title">OUR MAN OF GOD</p>
+    <div class="title">
+        <h2>Meet Our Man of God</h2>
+        <p>A servant of God dedicated to spreading the Gospel</p>
+    </div>
 
-    <h2>Apostle Kevin Kiprono</h2>
+    <div class="pastor">
 
-    <div class="leader-card">
+        <div>
+            <img src="apostle-kevin.jpg"
+                 alt="Apostle Kevin Kiprono">
+        </div>
 
-        <img
-            src="apostle-kevin.jpg"
-            alt="Apostle Kevin Kiprono">
+        <div>
 
-        <div class="leader-info">
-
-            <h3>Apostle Kevin Kiprono</h3>
+            <h2>Apostle Kevin Kiprono</h2>
 
             <p>
                 Welcome to Jesus Testimony Power Church.
-                Join us as we seek God through prayer,
-                worship and the teaching of His Word.
+                We believe in the power of prayer, faith,
+                worship and the Word of God.
             </p>
 
             <br>
 
-            <a
-                href="https://wa.me/254712550886"
-                target="_blank"
-                class="btn">
+            <p>
+                Come and experience the presence of God,
+                receive encouragement and grow in faith.
+            </p>
 
-                Contact Prayer Line
+            <br>
 
+            <a class="btn gold"
+               href="https://wa.me/254712550886"
+               target="_blank">
+                Contact Apostle
             </a>
 
         </div>
 
     </div>
-
 </section>
 
 
-<!-- ABOUT -->
-<section id="about" class="section">
+<!-- LIVE -->
+<section class="live">
 
-    <p class="small-title">WHO WE ARE</p>
+    <div class="live-badge">
+        🔴 LIVE
+    </div>
 
-    <h2>About JTPC</h2>
+    <div class="title">
+        <h2>Join Us Online</h2>
+        <p>
+            Follow JTPC services and Gospel broadcasts online.
+        </p>
+    </div>
 
-    <p>
-        Jesus Testimony Power Church is a place where
-        people come together to worship God, hear His Word,
-        pray and experience the power of Jesus Christ.
-    </p>
+    <div class="buttons">
 
-    <p>
-        Our desire is to see lives transformed through
-        faith, prayer and the Word of God.
-    </p>
+        <a class="btn gold"
+           href="#contact">
+            ▶ Watch Live
+        </a>
 
-</section>
-
-
-<!-- VERSE -->
-<section class="verse">
-
-    <p class="small-title">VERSE OF THE DAY</p>
-
-    <h2>
-        "With God all things are possible."
-    </h2>
-
-    <p>
-        Matthew 19:26
-    </p>
+    </div>
 
 </section>
 
 
 <!-- SERVICES -->
-<section id="services" class="section events">
+<section id="services">
 
-    <p class="small-title">JOIN US</p>
-
-    <h2>Weekly Services</h2>
-
-
-    <div class="event-card">
-
-        <h3>🌙 FRIDAY KESHA</h3>
-
-        <p>Every Friday</p>
-
-        <p>8:00 PM – 6:30 AM</p>
-
-        <p>
-            A night of prayer, worship and breakthrough.
-        </p>
-
+    <div class="title">
+        <h2>Our Services</h2>
+        <p>Come and worship with us</p>
     </div>
 
-
-    <div class="event-card">
-
-        <h3>🙏 WEDNESDAY ONE-ON-ONE</h3>
-
-        <p>Every Wednesday</p>
-
-        <p>
-            One-on-One with the Man of God
-        </p>
-
-        <p>
-            Apostle Kevin Kiprono
-        </p>
-
-    </div>
-
-
-    <div class="event-card">
-
-        <h3>☀️ SUNDAY MORNING GLORY</h3>
-
-        <p>Every Sunday</p>
-
-        <p>3:00 AM – 6:00 AM</p>
-
-    </div>
-
-
-    <div class="event-card">
-
-        <h3>🙌 FIRST SERVICE</h3>
-
-        <p>8:00 AM – 10:00 AM</p>
-
-    </div>
-
-
-    <div class="event-card">
-
-        <h3>🎶 PRAISE & WORSHIP</h3>
-
-        <p>10:00 AM – 11:00 AM</p>
-
-    </div>
-
-
-    <div class="event-card">
-
-        <h3>🔥 MAIN SERVICE</h3>
-
-        <p>11:00 AM – 1:00 PM</p>
-
-    </div>
-
-
-    <div class="event-card">
-
-        <h3>🙏 DELIVERANCE SERVICE</h3>
-
-        <p>1:00 PM – 3:00 PM</p>
-
-        <p>
-            Come expecting your breakthrough.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- SERMONS -->
-<section id="sermons" class="section">
-
-    <p class="small-title">WATCH & LISTEN</p>
-
-    <h2>Latest Sermons</h2>
-
-    <div class="cards">
+    <div class="card-grid">
 
         <div class="card">
-
-            <div class="icon">🎤</div>
-
-            <h3>Power of Prayer</h3>
-
-            <p>
-                Discover the power of prayer and trusting God.
-            </p>
-
-            <button onclick="showMessage('Power of Prayer')">
-                Watch Sermon
-            </button>
-
+            <h3>🔥 Friday Kesha</h3>
+            <p>8:00 PM – 6:00 AM</p>
+            <p>Night of prayer and worship.</p>
         </div>
-
 
         <div class="card">
-
-            <div class="icon">📖</div>
-
-            <h3>God's Word</h3>
-
-            <p>
-                Learn how God's Word can transform your life.
-            </p>
-
-            <button onclick="showMessage('Gods Word')">
-                Watch Sermon
-            </button>
-
+            <h3>🙏 Wednesday</h3>
+            <p>One-on-One with the Man of God</p>
+            <p>Apostle Kevin Kiprono</p>
         </div>
-
 
         <div class="card">
+            <h3>🌅 Morning Glory</h3>
+            <p>Sunday • 3:00 AM – 6:00 AM</p>
+        </div>
 
-            <div class="icon">✝️</div>
+        <div class="card">
+            <h3>⛪ First Service</h3>
+            <p>Sunday • 8:00 AM – 10:00 AM</p>
+        </div>
 
-            <h3>Salvation</h3>
+        <div class="card">
+            <h3>🎶 Praise & Worship</h3>
+            <p>Sunday • 10:00 AM – 11:00 AM</p>
+        </div>
 
-            <p>
-                Jesus Christ is the way, the truth and the life.
-            </p>
+        <div class="card">
+            <h3>🔥 Main Service</h3>
+            <p>Sunday • 11:00 AM – 1:00 PM</p>
+        </div>
 
-            <button onclick="showMessage('Salvation')">
-                Watch Sermon
-            </button>
-
+        <div class="card">
+            <h3>🕊️ Deliverance</h3>
+            <p>Sunday • 1:00 PM – 3:00 PM</p>
         </div>
 
     </div>
-
 </section>
 
 
-<!-- LIVESTREAM -->
-<section class="livestream">
+<!-- VERSE -->
+<section>
 
-    <p class="small-title">WATCH US LIVE</p>
+    <div class="title">
 
-    <h2>JTPC Livestream</h2>
-
-    <p>
-        Join us online during our live services.
-    </p>
-
-    <div class="live-box">
-
-        <div class="live-icon">🔴</div>
-
-        <h3>Live Services</h3>
+        <h2>Verse of the Day</h2>
 
         <p>
-            Livestream link will be added here.
-        </p>
-
-        <button onclick="showMessage('JTPC Livestream')">
-            Watch Live
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- GALLERY -->
-<section id="gallery" class="section">
-
-    <p class="small-title">JTPC MOMENTS</p>
-
-    <h2>Gallery</h2>
-
-    <div class="gallery">
-
-        <div class="gallery-item">
-
-            <img
-                src="apostle-kevin.jpg"
-                alt="Apostle Kevin Kiprono">
-
-        </div>
-
-
-        <div class="gallery-item">
-
-            <div class="gallery-placeholder">
-
-                ⛪
-
-                <p>
-                    Church Moments
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="gallery-item">
-
-            <div class="gallery-placeholder">
-
-                🙏
-
-                <p>
-                    Prayer & Worship
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- LOCATION -->
-<section class="location-section">
-
-    <p class="small-title">FIND US</p>
-
-    <h2>Our Location</h2>
-
-    <div class="location-box">
-
-        <div class="map-icon">📍</div>
-
-        <h3>Mau Summit</h3>
-
-        <p>
-            Jesus Testimony Power Church
+            “I can do all things through Christ who strengthens me.”
         </p>
 
         <br>
 
-        <a
-            href="https://www.google.com/maps/search/?api=1&query=Mau+Summit"
-            target="_blank"
-            class="btn">
-
-            Open Location
-
-        </a>
+        <strong style="color:#d4af37;">
+            Philippians 4:13
+        </strong>
 
     </div>
 
@@ -420,105 +430,63 @@
 
 
 <!-- CONTACT -->
-<section id="contact" class="section contact">
+<section id="contact">
 
-    <p class="small-title">NEED PRAYER?</p>
-
-    <h2>Prayer Line</h2>
-
-    <p>
-        Reach Jesus Testimony Power Church
-        through our prayer line.
-    </p>
-
-
-    <div class="contact-box">
-
-        <h3>📞 0712550886</h3>
-
-        <p>
-            Prayer Line & WhatsApp
-        </p>
-
-        <br>
-
-        <a
-            href="https://wa.me/254712550886"
-            target="_blank"
-            class="btn">
-
-            💬 WhatsApp Us
-
-        </a>
-
+    <div class="title">
+        <h2>Connect With JTPC</h2>
+        <p>We would love to hear from you</p>
     </div>
 
+    <div class="card-grid">
 
-    <h2>Follow Us</h2>
+        <div class="card">
+            <h3>🙏 Prayer Line</h3>
+            <p>0712 550 886</p>
 
-    <div class="social-buttons">
-
-        <a
-            class="social whatsapp"
-            href="https://wa.me/254712550886"
-            target="_blank">
-
-            💬 WhatsApp
-
-        </a>
-
-
-        <a
-            class="social facebook"
-            href="https://www.facebook.com/"
-            target="_blank">
-
-            📘 Facebook
             <br>
-            Apostle Kevin Kiprono
 
-        </a>
+            <a class="btn gold"
+               href="https://wa.me/254712550886"
+               target="_blank">
+                WhatsApp Us
+            </a>
+        </div>
 
+        <div class="card">
+            <h3>📍 Location</h3>
+            <p>Mau Summit, Kenya</p>
+        </div>
 
-        <a
-            class="social tiktok"
-            href="https://www.tiktok.com/@apostlekevin.kiprono"
-            target="_blank">
+        <div class="card">
+            <h3>📱 Social Media</h3>
+            <p>Follow Apostle Kevin Kiprono</p>
 
-            🎵 TikTok
             <br>
-            @apostlekevin.kiprono
 
-        </a>
+            <a class="btn gold"
+               href="https://www.facebook.com/"
+               target="_blank">
+                Facebook
+            </a>
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- FOOTER -->
 <footer>
 
-    <h2>JTPC</h2>
-
     <p>
+        ✝ <strong>JTPC</strong> —
         Jesus Testimony Power Church
     </p>
 
     <p>
-        Mau Summit
-    </p>
-
-    <p>
-        © <span id="year"></span>
-        JTPC. All Rights Reserved.
+        © 2026 JTPC. All Rights Reserved.
     </p>
 
 </footer>
 
-
-<script src="script.js"></script>
-
 </body>
-
 </html>
