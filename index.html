@@ -428,64 +428,82 @@
 
 </section>
 
-
-<!-- CONTACT -->
+   <!-- CONTACT & PRAYER -->
 <section id="contact">
 
     <div class="title">
-        <h2>Connect With JTPC</h2>
-        <p>We would love to hear from you</p>
+        <h2>Prayer & Connect</h2>
+        <p>We are here to pray with you and stand with you in faith.</p>
     </div>
 
     <div class="card-grid">
 
+        <!-- WHATSAPP -->
         <div class="card">
             <h3>🙏 Prayer Line</h3>
-            <p>0712 550 886</p>
+            <p>Need prayer or spiritual guidance?</p>
 
             <br>
 
             <a class="btn gold"
-               href="https://wa.me/254712550886"
+               href="https://wa.me/254712550886?text=Shalom%20JTPC%2C%20I%20would%20like%20prayer."
                target="_blank">
-                WhatsApp Us
+                💬 WhatsApp Prayer
             </a>
         </div>
 
+        <!-- PRAYER REQUEST -->
         <div class="card">
-            <h3>📍 Location</h3>
-            <p>Mau Summit, Kenya</p>
+            <h3>🕊️ Prayer Request</h3>
+
+            <form onsubmit="sendPrayer(); return false;">
+
+                <input
+                    id="prayerName"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                    style="width:100%; padding:13px; margin:8px 0; border-radius:8px; border:1px solid #555; background:#1b1b1b; color:white;"
+                >
+
+                <textarea
+                    id="prayerMessage"
+                    placeholder="Write your prayer request..."
+                    rows="5"
+                    required
+                    style="width:100%; padding:13px; margin:8px 0; border-radius:8px; border:1px solid #555; background:#1b1b1b; color:white;"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="btn gold"
+                    style="cursor:pointer;"
+                >
+                    🙏 Send Prayer Request
+                </button>
+
+            </form>
         </div>
 
+        <!-- LOCATION -->
         <div class="card">
-            <h3>📱 Social Media</h3>
-            <p>Follow Apostle Kevin Kiprono</p>
+            <h3>📍 Visit JTPC</h3>
+            <p>Mau Summit, Kenya</p>
 
             <br>
 
-            <a class="btn gold"
-               href="https://www.facebook.com/"
-               target="_blank">
-                Facebook
+            <a
+                class="btn gold"
+                href="https://www.google.com/maps/search/?api=1&query=Mau+Summit+Kenya"
+                target="_blank"
+            >
+                🗺️ Open Map
             </a>
         </div>
 
     </div>
 
 </section>
-
-
-<footer>
-
-    <p>
-        ✝ <strong>JTPC</strong> —
-        Jesus Testimony Power Church
-    </p>
-
-    <p>
-        © 2026 JTPC. All Rights Reserved.
-    </p>
-
 </footer>
 
 </body>
